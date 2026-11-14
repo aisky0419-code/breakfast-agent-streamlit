@@ -1,0 +1,4 @@
+- 我要把這個專案deploy到 streamlit cloud
+- 準備 toml檔 
+- streamlit利用toml
+- 準備 gitignore

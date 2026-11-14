@@ -1,0 +1,21 @@
+# ── 機密：絕對不能進 git ──────────────────────────
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+
+# ── Python ───────────────────────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── 編輯器 / 作業系統 ─────────────────────────────
+.DS_Store
+.vscode/
+.idea/
+.claude/

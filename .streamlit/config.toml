@@ -1,0 +1,20 @@
+# Streamlit 的「非機密」設定：外觀與伺服器行為。這個檔案會進 git。
+# 機密（API key、資料庫密碼）放在 secrets.toml，不進 git。
+
+[theme]
+base = "light"
+primaryColor = "#F59E0B"            # 晨光的暖橘色
+backgroundColor = "#FFFBF2"
+secondaryBackgroundColor = "#FCEFD5"
+textColor = "#3B2A1A"
+
+[server]
+headless = true                     # 不自動開瀏覽器（雲端沒有瀏覽器可開）
+runOnSave = true                    # 本機開發：存檔就自動重跑
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"             # 隱藏給開發者用的選單，客人看到的畫面比較乾淨
+showErrorDetails = false            # 出錯時不把程式碼與路徑顯示給客人看
