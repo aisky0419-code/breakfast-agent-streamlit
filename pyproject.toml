@@ -1,0 +1,22 @@
+[project]
+name = "20261117-agent2-agent-sdk-aiven-streamlit-deploy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Aisky", email = "Aisky0419@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "mysql-connector-python>=26.10.0",
+    "openai-agents>=0.24.0",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.67.0",
+]
+
+[project.scripts]
+20261117-agent2-agent-sdk-aiven-streamlit-deploy = "20261117_agent2_agent_sdk_aiven_streamlit_deploy:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"

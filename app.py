@@ -162,6 +162,7 @@ def render_steps(steps: list[str], expanded: bool = False) -> None:
 # 畫面 1：還沒有客人 → 先問名字
 # ════════════════════════════════════════════════════════════
 
+#因為將來 我們要上傳到streamlit cloud 所以它會自己去抓secrets.toml的資料
 if not os.getenv("OPENAI_API_KEY"):
     st.error(
         "找不到 OPENAI_API_KEY：本機請把 `.streamlit/secrets.toml.example` 複製成 `secrets.toml` 並填值；"
